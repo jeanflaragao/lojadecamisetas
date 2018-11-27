@@ -1,9 +1,3 @@
-<% if flash[:notice] %>
-    <div class="alert alert-success" role="alert">
-        <%= flash[:notice] %>
-    </div>
-<% end %>  
-
 <table class="table table-bordered">
     <thead>
         <tr>
@@ -14,7 +8,7 @@
         </tr>
     </thead>
     <tbody>
-        <%= render partial: "produto", collection:@produtos %>
+        <%= render @produtos %>
     </tbody>
 
 </table>
