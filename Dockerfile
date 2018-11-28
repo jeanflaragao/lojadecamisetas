@@ -1,4 +1,4 @@
-FROM rails:onbuild
+FROM ruby:2.5.1
 
 ENV HOME /home/rails/webapp
 
